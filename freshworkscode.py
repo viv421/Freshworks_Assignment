@@ -44,12 +44,12 @@ def delete(key):
         b=Dict[key]
         if b[1]!=0:
             if time.time()<b[1]: #Checking the expiry time
-                del d[key]
+                del Dict[key]
                 print("key is successfully deleted")
             else:
                 print("Error: time-to-live of",key,"has expired") 
         else:
-            del d[key]
+            del Dict[key]
             print("key is successfully deleted")
 
 
